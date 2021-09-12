@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Array Iterable Document</title>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, officia.</h2>
+   <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quam, inventore architecto tenetur laudantium nulla?</strong><br>
+    <strong id="name"></strong>
+    <strong id="fname"></strong><br>
+    <strong id="lname"></strong>
+
+    <script>
+        const arr = ["A", "B", "C", "D"];
+        const arrys = ["A", "B", "C", "D", 'E', 'F', 'F']
+        var text = " ";
+        
+        for(var a of arr){
+            text += a + "<br>";
+        }
+        var stext = " ";
+        for(var b of arrys){
+            stext += b;
+        }
+        var sstext = " ";
+        for(var c in arrys){
+            sstext += c;
+        }
+        document.getElementById("fname").innerHTML = stext;
+        document.getElementById("name").innerHTML = text;
+        document.getElementById("lname").innerHTML = sstext;
+
+    </script>
+</body>
+</html>

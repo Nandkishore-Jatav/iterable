@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterable Document</title>
+</head>
+<body>
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repudiandae repellendus laboriosam et, eum magnam.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, facilis!</p>
+    
+    <i><strong id="nand"></strong></i>
+    <h1 id="nandkishore"></h1>
+    <h2 id="kishore"></h2>
+    
+
+    <script>
+        const name = "Nandkishore Jatav";
+        const ffname ="Nandkishore";
+        const fname ="Nandkishore";
+        
+
+        var text = ""
+        for(const n of name){
+            text += n;
+        }
+        
+        var fftext = ""
+        for(const nk in ffname){
+            fftext += nk;
+        }
+        var ftext = ""
+        for(const k of fname){
+            ftext += k + "<br>";
+        }
+        document.getElementById("nand").innerHTML = text;
+        document.getElementById("kishore").innerHTML = ftext;
+        document.getElementById("nandkishore").innerHTML = fftext;
+
+    </script>
+</body>
+</html>

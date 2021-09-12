@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterating Over on Set Document</title>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat suscipit exercitationem animi eveniet quisquam molestias fugit.</h2>
+    <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, reprehenderit?</strong>
+    <em class="set1"></em><br>
+    <em id="set1"></em><br>
+    <strong id="set2"></strong><br>
+    <strong id="set3"></strong>
+    <script>
+        const sets1 = new Set(["A", "B", "C", "D"]);
+        const sets2 = new Set(["A", "B", "C", "D", 'E', 'F', 'F']);
+        const sets3 = new Set(["A", "B", "C", "D", 'E', 'F', 'F']);
+    
+        var text = " ";
+        for(var a of sets1){
+            text += a + "<br>";
+        }
+        var stext = " ";
+        for(var b of sets2){
+            stext += b;
+        }
+        var sstext = " ";
+        for(var c in sets3){
+            sstext += c;
+        }
+        document.getElementById("set1").innerHTML = text;
+        document.getElementsByClassName("set1").innerHTML = text;
+        document.getElementById("set2").innerHTML = stext;
+        document.getElementById("set3").innerHTML = sstext;
+    </script>
+</body>
+</html>

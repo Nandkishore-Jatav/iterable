@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sunt omnis laborum nihil nostrum minima alias iusto illum, itaque optio id esse laudantium magni exercitationem qui fugiat quos voluptatem ea.</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia dolorem eveniet similique, qui ipsam omnis laboriosam perspiciatis doloribus tenetur.</p>
+    <strong id="nand"></strong>
+    <strong id="kishore"></strong>
+
+    <script>
+        let name = new Map([
+            ["Banana", 234],
+            ["Papiya", 73],
+            ["Apples", 763],
+            ["Orange", 234],
+            ["Fruits", 76]
+        ]);
+        
+
+        var text = " ";
+        for(var n of name){
+            text = text + n + "<br>";
+        }
+        var stext = " ";
+        for(var nk in name){
+            stext = text + nk + "<br>";
+        }
+        document.getElementById("nand").innerHTML = text;
+        document.getElementById("kishore").innerHTML = stext;
+        
+
+    </script>
+</body>
+</html>
